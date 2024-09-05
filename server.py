@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "http://192.168.56.1:3000", "https://subtle-snapper-just.ngrok-free.app"]}}, supports_credentials=True)  # This will enable CORS for all routes
 # Database configuration
 app.config['SECRET_KEY'] = 'urbancartversion1'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://urbancartdb:Urbancart#8451939709@urbancart-db.cjqiwqyiq6o2.us-east-2.rds.amazonaws.com:5432/shoppingapp'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'rds_db_link'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 from flask_sqlalchemy import SQLAlchemy
@@ -279,7 +279,7 @@ def get_cart(current_user):
 
 import stripe
 
-stripe.api_key = 'sk_test_51PmJZ52MJdyBH0mnYZZIpBhcVu12qHo8bHlQyui9hah8JyytyW4xgfXfQ6otZtPD2DdPxQWoy1VZa7ansr3QFrMH00GCJ6JCH3'
+stripe.api_key = 'Insert_Your_key'
 
 @app.route('/create-payment-intent', methods=['POST'])
 @token_required

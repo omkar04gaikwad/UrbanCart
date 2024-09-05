@@ -7,13 +7,13 @@ import { getAuth, RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBNacalSUTV71_tgUkS0JrtvbgPPY-JHZc",
-    authDomain: "urbancart-20cc2.firebaseapp.com",
-    projectId: "urbancart-20cc2",
-    storageBucket: "urbancart-20cc2.appspot.com",
-    messagingSenderId: "742105588542",
-    appId: "1:742105588542:web:bdd141d50657899c4a026f",
-    measurementId: "G-TCDPNXWB91"
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 };
 
 // Initialize Firebase
